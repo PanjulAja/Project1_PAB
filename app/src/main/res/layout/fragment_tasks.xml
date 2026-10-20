@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fz_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@drawable/bg_card">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DAFTAR FOKUS"
+                android:textColor="@color/fz_muted"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tugas Kuliah"
+                android:textColor="@color/fz_text"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_add_task"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="+ Tambah Tugas"
+                android:textAllCaps="false"
+                android:textColor="@color/fz_background"
+                android:backgroundTint="@color/fz_mint" />
+
+            <TextView
+                android:id="@+id/txt_task_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:padding="12dp"
+                android:text="0/4 Selesai"
+                android:textColor="@color/fz_text"
+                android:textSize="16sp"
+                android:background="@drawable/bg_pill" />
+
+            <ProgressBar
+                android:id="@+id/task_progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_marginTop="10dp"
+                android:progressTint="@color/fz_mint"
+                android:progressBackgroundTint="@color/fz_surface_light" />
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/filter_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="Semua"
+                    android:textAllCaps="false"
+                    android:backgroundTint="@color/fz_mint"
+                    android:textColor="@color/fz_background" />
+
+                <Button
+                    android:id="@+id/filter_today"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="Hari Ini"
+                    android:textAllCaps="false"
+                    android:backgroundTint="@color/fz_surface"
+                    android:textColor="@color/fz_text" />
+
+                <Button
+                    android:id="@+id/filter_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="☆ Prioritas"
+                    android:textAllCaps="false"
+                    android:backgroundTint="@color/fz_surface"
+                    android:textColor="@color/fz_orange" />
+
+                <Button
+                    android:id="@+id/filter_done"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="Selesai"
+                    android:textAllCaps="false"
+                    android:backgroundTint="@color/fz_surface"
+                    android:textColor="@color/fz_text" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:id="@+id/task_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp" />
+
+    </LinearLayout>
+</ScrollView>

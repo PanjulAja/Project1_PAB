@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fz_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="● SOUNDSCAPE STUDIO"
+            android:textColor="@color/fz_mint"
+            android:textStyle="bold"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suara Ambience"
+            android:textColor="@color/fz_text"
+            android:textSize="29sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tingkatkan konsentrasi belajar &amp; flow state"
+            android:textColor="@color/fz_muted"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_card">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="♧  SEDANG DIPUTAR"
+                android:textColor="@color/fz_mint"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_sound_playing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Hujan Lembut di Jendela"
+                android:textColor="@color/fz_text"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_sound_play"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="12dp"
+                android:text="▶  Putar"
+                android:textAllCaps="false"
+                android:textColor="@color/fz_background"
+                android:backgroundTint="@color/fz_mint" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="Volume"
+                android:textColor="@color/fz_muted" />
+
+            <SeekBar
+                android:id="@+id/seek_volume"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="68"
+                android:progressTint="@color/fz_mint"
+                android:thumbTint="@color/fz_mint" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Pilih Suasana"
+            android:textColor="@color/fz_text"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+        <GridLayout
+            android:id="@+id/sound_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:useDefaultMargins="true"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/sound_rain"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_columnWeight="1"
+                android:gravity="center_vertical"
+                android:padding="14dp"
+                android:text="☁\n\nHujan Deras\nGemuruh &amp; curahan air"
+                android:textColor="@color/fz_mint"
+                android:textSize="15sp"
+                android:background="@drawable/bg_card" />
+
+            <TextView
+                android:id="@+id/sound_cafe"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_columnWeight="1"
+                android:gravity="center_vertical"
+                android:padding="14dp"
+                android:text="☕\n\nKafe Tenang\nDentingan cangkir"
+                android:textColor="@color/fz_text"
+                android:textSize="15sp"
+                android:background="@drawable/bg_card" />
+
+            <TextView
+                android:id="@+id/sound_fire"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_columnWeight="1"
+                android:gravity="center_vertical"
+                android:padding="14dp"
+                android:text="♨\n\nApi Unggun\nKayu bakar &amp; hangat"
+                android:textColor="@color/fz_orange"
+                android:textSize="15sp"
+                android:background="@drawable/bg_card" />
+
+            <TextView
+                android:id="@+id/sound_forest"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_columnWeight="1"
+                android:gravity="center_vertical"
+                android:padding="14dp"
+                android:text="♧\n\nHutan Pinus\nSemilir angin"
+                android:textColor="@color/fz_mint"
+                android:textSize="15sp"
+                android:background="@drawable/bg_card" />
+
+            <TextView
+                android:id="@+id/sound_white_noise"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_columnWeight="1"
+                android:gravity="center_vertical"
+                android:padding="14dp"
+                android:text="≋\n\nWhite Noise\nBlokir distraksi luar"
+                android:textColor="@color/fz_text"
+                android:textSize="15sp"
+                android:background="@drawable/bg_card" />
+
+            <TextView
+                android:id="@+id/sound_lofi"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_columnWeight="1"
+                android:gravity="center_vertical"
+                android:padding="14dp"
+                android:text="♫\n\nLo-Fi Chill Beats\nIrama santai"
+                android:textColor="@color/fz_mint"
+                android:textSize="15sp"
+                android:background="@drawable/bg_card" />
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:padding="14dp"
+            android:background="@drawable/bg_card">
+
+            <CheckBox
+                android:id="@+id/check_sync_timer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:buttonTint="@color/fz_mint"
+                android:text="Sinkronisasi Timer Pomodoro"
+                android:textColor="@color/fz_text" />
+
+            <CheckBox
+                android:id="@+id/check_binaural"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/fz_mint"
+                android:text="Gelombang Binaural (Beta 14Hz)"
+                android:textColor="@color/fz_text" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

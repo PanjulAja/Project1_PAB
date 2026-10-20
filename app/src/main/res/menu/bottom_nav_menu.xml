@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_focus"
+        android:icon="@drawable/ic_home"
+        android:title="Fokus" />
+
+    <item
+        android:id="@+id/navigation_tasks"
+        android:icon="@drawable/ic_favorite"
+        android:title="Tugas" />
+
+    <item
+        android:id="@+id/navigation_stats"
+        android:icon="@drawable/ic_account_box"
+        android:title="Statistik" />
+
+    <item
+        android:id="@+id/navigation_ambience"
+        android:icon="@drawable/ic_home"
+        android:title="Ambience" />
+
+</menu>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="fz_background">#0A1226</color>
+    <color name="fz_surface">#182239</color>
+    <color name="fz_surface_light">#222D44</color>
+    <color name="fz_mint">#41DCA9</color>
+    <color name="fz_mint_dark">#09B884</color>
+    <color name="fz_text">#E2E9FF</color>
+    <color name="fz_muted">#B1BEC8</color>
+    <color name="fz_orange">#FFB54C</color>
+    <color name="fz_red">#FF8F97</color>
+</resources>

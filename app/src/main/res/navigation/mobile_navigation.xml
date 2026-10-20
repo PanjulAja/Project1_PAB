@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_focus">
+
+    <fragment
+        android:id="@+id/navigation_focus"
+        android:name="com.example.project1.FocusFragment"
+        android:label="Fokus" />
+
+    <fragment
+        android:id="@+id/navigation_tasks"
+        android:name="com.example.project1.TasksFragment"
+        android:label="Tugas" />
+
+    <fragment
+        android:id="@+id/navigation_stats"
+        android:name="com.example.project1.StatsFragment"
+        android:label="Statistik" />
+
+    <fragment
+        android:id="@+id/navigation_ambience"
+        android:name="com.example.project1.AmbienceFragment"
+        android:label="Ambience" />
+
+</navigation>
